@@ -1,0 +1,28 @@
+.frm-cnt {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.signup-inp {
+  width: 280px;
+  height: 50px;
+  border-radius: 9px;
+  padding: 5px;
+  font-size: 25px;
+}
+
+.signup-btn {
+  display: flex;
+}
+
+.btn {
+  width: 100px;
+  height: 42px;
+  border-radius: 9px;
+  background-color: beige;
+  font-size: 1.2rem;
+  font-weight: 700;
+}

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import './form.css';
+
 const SignUp = () => {
   const [signUpData, setSignUpData] = useState('');
 
@@ -9,7 +11,7 @@ const SignUp = () => {
   console.log(signUpData);
   return (
     <>
-      <form>
+      <form className='frm-cnt'>
         <input
           className='signup-inp'
           type='text'
@@ -38,7 +40,7 @@ const SignUp = () => {
           placeholder='Enter your password'
         />
         <div className='signup-btn'>
-          <button>SignUp</button>
+          <button className='btn'>SignUp</button>
         </div>
       </form>
     </>
