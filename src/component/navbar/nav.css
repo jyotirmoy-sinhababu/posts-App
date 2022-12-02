@@ -2,6 +2,7 @@
   display: flex;
   width: 100%;
   max-width: 1550px;
+  height: 55px;
   padding-left: 55px;
   gap: 1.2rem;
 }
