@@ -1,12 +1,16 @@
 import React from 'react';
-import SignUp from '../auth/SignUp';
+import AuthCnt from '../auth/AuthCnt';
 import Nav from '../navbar/Nav';
+
+import './container.css';
 
 const Container = () => {
   return (
     <div>
       <Nav />
-      <SignUp />
+      <div className='auth-cnt'>
+        <AuthCnt />
+      </div>
     </div>
   );
 };

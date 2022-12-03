@@ -9,9 +9,17 @@ const SignUp = () => {
     setSignUpData({ ...signUpData, [e.target.name]: e.target.value });
   };
   console.log(signUpData);
+
+  const handleSignUpSubmit = () => {};
+
   return (
     <>
-      <form className='frm-cnt'>
+      <form
+        className='frm-cnt'
+        onSubmit={(e) => {
+          e.preventDefault();
+        }}
+      >
         <input
           className='signup-inp'
           type='text'
