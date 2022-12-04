@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 
+import { auth } from '../firebase/FirebaseConfig';
+import { createUserWithEmailAndPassword } from 'firebase/auth';
+
 import './form.css';
 
 const SignUp = () => {
@@ -10,7 +13,11 @@ const SignUp = () => {
   };
   console.log(signUpData);
 
-  const handleSignUpSubmit = () => {};
+  const handleSignUpSubmit = async (e) => {
+    e.preventDefault();
+    try {
+    } catch (err) {}
+  };
 
   return (
     <>

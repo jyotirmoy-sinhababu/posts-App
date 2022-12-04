@@ -11,7 +11,8 @@
   gap: 2rem;
 }
 
-.signup-inp {
+.signup-inp,
+.login-inp {
   width: 280px;
   height: 50px;
   border-radius: 9px;

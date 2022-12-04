@@ -6,8 +6,18 @@ const Login = () => {
   return (
     <div>
       <form className='frm-cnt'>
-        <input className='login-inp' type='text' name='email' />
-        <input className='login-inp' type='text' name='password' />
+        <input
+          className='login-inp'
+          type='text'
+          name='email'
+          placeholder='Enter your email'
+        />
+        <input
+          className='login-inp'
+          type='text'
+          name='password'
+          placeholder='Enter your password'
+        />
         <div className='login-btn-cnt'>
           <button className='login-btn'>LogIn</button>
           <div>
