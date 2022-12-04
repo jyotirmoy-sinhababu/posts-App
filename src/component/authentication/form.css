@@ -19,11 +19,11 @@
   font-size: 25px;
 }
 
-.signup-btn {
+.signup-btn-cnt {
   display: flex;
 }
 
-.btn {
+.signup-btn {
   width: 100px;
   height: 42px;
   border-radius: 9px;

@@ -47,8 +47,8 @@ const SignUp = () => {
           name='password'
           placeholder='Enter your password'
         />
-        <div className='signup-btn'>
-          <button className='btn'>SignUp</button>
+        <div className='signup-btn-cnt'>
+          <button className='signup-btn'>SignUp</button>
         </div>
       </form>
     </>

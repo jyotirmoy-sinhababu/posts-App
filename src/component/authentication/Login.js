@@ -8,10 +8,10 @@ const Login = () => {
       <form className='frm-cnt'>
         <input className='login-inp' type='text' name='email' />
         <input className='login-inp' type='text' name='password' />
-        <div>
-          <button>LogIn</button>
+        <div className='login-btn-cnt'>
+          <button className='login-btn'>LogIn</button>
           <div>
-            <p>if not sign up</p>
+            <p className='login-btn'>if not sign up</p>
             <button>sign up</button>
           </div>
         </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import AuthCnt from '../auth/AuthCnt';
+import AuthCnt from '../authentication/AuthCnt';
 import Nav from '../navbar/Nav';
 
 import './container.css';
