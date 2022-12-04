@@ -6,8 +6,12 @@ import { createUserWithEmailAndPassword } from 'firebase/auth';
 import './form.css';
 
 const SignUp = () => {
-  const [signUpData, setSignUpData] = useState('');
-
+  const [signUpData, setSignUpData] = useState({
+    name: '',
+    email: '',
+    password: '',
+  });
+  const { name, email, password } = signUpData;
   const handleChange = (e) => {
     setSignUpData({ ...signUpData, [e.target.name]: e.target.value });
   };
@@ -16,6 +20,13 @@ const SignUp = () => {
   const handleSignUpSubmit = async (e) => {
     e.preventDefault();
     try {
+      const res = await createUserWithEmailAndPassword(
+        auth,
+        email,
+        password
+      ).then((res) => {
+        console.log(res);
+      });
     } catch (err) {}
   };
 
@@ -25,6 +36,7 @@ const SignUp = () => {
         className='frm-cnt'
         onSubmit={(e) => {
           e.preventDefault();
+          handleSignUpSubmit(e);
         }}
       >
         <input
