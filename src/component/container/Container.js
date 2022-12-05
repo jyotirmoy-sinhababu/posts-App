@@ -1,6 +1,6 @@
 import React from 'react';
-import AuthCnt from '../authentication/AuthCnt';
 import Nav from '../navbar/Nav';
+import { Outlet } from 'react-router-dom';
 
 import './container.css';
 
@@ -8,9 +8,7 @@ const Container = () => {
   return (
     <div>
       <Nav />
-      <div className='auth-cnt'>
-        <AuthCnt />
-      </div>
+      <Outlet />
     </div>
   );
 };

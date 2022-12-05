@@ -2,7 +2,7 @@ import React from 'react';
 
 import './form.css';
 
-const Login = () => {
+const LogIn = () => {
   return (
     <div>
       <form className='frm-cnt'>
@@ -30,4 +30,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default LogIn;
