@@ -33,7 +33,7 @@ const LogIn = () => {
   };
 
   return (
-    <div>
+    <div className='main-frm-cnt'>
       <form onSubmit={() => {}} className='frm-cnt'>
         <input
           onChange={(e) => {
@@ -57,9 +57,10 @@ const LogIn = () => {
           <button type='submit' className='login-btn'>
             LogIn
           </button>
-          <div>
-            <p className='login-btn'>if not sign up</p>
+          <div className='signup-navigate-cnt'>
+            <p className='btn-txt'>if not sign up ?</p>
             <button
+              className='navigate-btn'
               onClick={() => {
                 navigate('/signup');
               }}
