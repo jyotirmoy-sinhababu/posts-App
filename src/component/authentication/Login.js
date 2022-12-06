@@ -34,7 +34,12 @@ const LogIn = () => {
 
   return (
     <div className='main-frm-cnt'>
-      <form onSubmit={() => {}} className='frm-cnt'>
+      <form
+        onSubmit={(e) => {
+          handleLogInSubmit(e);
+        }}
+        className='frm-cnt'
+      >
         <input
           onChange={(e) => {
             handleChange(e);
