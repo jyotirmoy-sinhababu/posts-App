@@ -1,0 +1,17 @@
+.header-btn-cnt {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 155px;
+  width: 100%;
+  max-width: 1450px;
+  height: 60px;
+}
+
+.header-btn {
+  font-size: larger;
+  background-color: white;
+  border: none;
+  font-weight: 600;
+  color: black;
+}
